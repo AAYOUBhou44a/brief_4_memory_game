@@ -38,3 +38,62 @@ body {
     transform-style: preserve-3d;
     transition: 0.5s ease-in-out;
 }
+.carte:hover {
+  transform: scale(1.05);
+}
+
+/* #victory-message {
+    background-color: rgb(12, 139, 178);
+    border-radius: 5px;
+    padding: 10px;
+} */
+ 
+#victory-message {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fffbe6;
+  border: 2px solid #f7d154;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 20px gold;
+  z-index: 1000;
+}
+
+#victory-message h2 {
+  margin-bottom: 10px;
+  color: #d49f00;
+}
+
+#victory-message button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #f7d154;
+  color: #333;
+  transition: background 0.3s;
+}
+
+#victory-message button:hover {
+  background-color: #e6c000;
+}
+#score-container {
+  margin: 20px;
+  font-size: 18px;
+}
+
+#score-container p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+#score-container span {
+  color: #069330;   /* couleur différente pour les chiffres */
+  font-size: 20px;
+}
